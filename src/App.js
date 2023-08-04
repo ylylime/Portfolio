@@ -6,19 +6,15 @@ import './app.css';
 //components
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
-import Footer from './components/Footer/Footer';
 import Education from './components/Education/Education';
-import Certifications from "./components/Certifications/Certifications";
 import Projects from "./components/Projects/Project";
 import AboutMe from "./components/About Me/AboutMe";
 
-import { useSelector } from "react-redux";
 
 const App=()=> {
     const location=useLocation();
-    const theme = useSelector(state => state.theme);
     return (
-        <div className="App" style={theme}>
+        <div className="App">
             <Navbar />
             <div className="app-content">
                 <TransitionGroup>
@@ -39,10 +35,6 @@ const App=()=> {
                                 <Education />
                             </Route>
 
-                            <Route path="/certifications">
-                                <Certifications />
-                            </Route>
-
                             <Route path="/projects">
                                 <Projects />
                             </Route>
@@ -54,7 +46,6 @@ const App=()=> {
                     </CSSTransition>
                 </TransitionGroup>
             </div>
-            <Footer />
         </div>
     )
 }

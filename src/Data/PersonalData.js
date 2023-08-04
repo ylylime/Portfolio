@@ -1,12 +1,12 @@
 const PersonalData = {
-    firstName: "Abhishek",
-    lastName: "Kumar",
-    nickName:"<  killer - abhi >",
-    mobNo:"+91 8299069282",
-    email:"abhi09148299@gmail.com",
-    address:"Farrukhabad , U.P , India",
-    aboutMe:"Hi Everyone, I am Abhishek Kumar from Uttar Pradesh, India.I learned C, C++, Python, JavaScript etc, Worked with libraries & frameworks like ReactJS, NodeJS. Have a keen knowledge of databases like MySQL, MongoDB and Firebase. Apart from Coding I love to play games.",
+    firstName: "Emily",
+    lastName: "Ng",
+    nickName:" ",
+    mobNo:" ",
+    email:"leyi1233@gmail.com",
+    address:"Bay Area, California, USA",
+    aboutMe:"Hi, I am Emily Ng from Bay Area, California, USA. Apart from programming, I love photography, content creating, travelling, and meeting new people. Connect with me!",
     resumeLink:'#'
 }
-export const autoTypeData=['2nd Year IT Grad', 'Developer', 'MERN Stack Developer', 'Open Source Contributor'];
+export const autoTypeData=['3rd Year Computer Science Student', 'Web Developer', 'Game Developer', 'Programmer'];
 export default PersonalData;

@@ -6,13 +6,10 @@ import classes from "./home.module.css";
 import { autoTypeData } from "../../Data/PersonalData";
 
 import SocialLinks from "../SocialLinks/SocialLinks";
-import { useSelector } from "react-redux";
 // const linkIcons=[GitHubIcon,LinkedInIcon,TwitterIcon,InstagramIcon,EmailIcon];
 
 function Home(props) {
 
-    const nonThemeColor = useSelector(state => state.nonThemeColor);
-    const uiColor=useSelector(state=>state.uiColor);
     function handleTyper() {
         let textItems = autoTypeData;
         var autoTyper = document.getElementById('typer');
@@ -32,14 +29,11 @@ function Home(props) {
                 <h1 className={classes.greeting}>
                     Hi There !
                 </h1>
-                <h2>I'm &nbsp;<span id="name" style={{ color: uiColor }}>{PersonalData.firstName}&nbsp;{PersonalData.lastName}</span></h2>
-                <h3 style={{ color: nonThemeColor }}>
-                    {PersonalData.nickName}
-                </h3>
+                <h2>I'm <span id="name">{PersonalData.firstName}&nbsp;{PersonalData.lastName}</span></h2>
                 <div className={classes.autoText}>
-                    I am a &nbsp; <span id="typer" style={{ color: uiColor }}></span>
+                    I am a <span id="typer"></span>
                 </div>
-                <p className={classes.connectText}>Feel free to <span style={{ color: uiColor }}>connect</span> with me.</p>
+                <p className={classes.connectText}>Feel free to <span>connect</span> with me.</p>
                 <SocialLinks className={classes.links} />
             </div>
             <div className={classes.avatarImage}>
